@@ -98,7 +98,7 @@ def add_bootstrap
             })
         )\n"
   end
-  inject_into_file 'app/javascript/packs/application.js', after: '// ll be compiled' do
+  inject_into_file 'app/javascript/packs/application.js', after: "// that code so it'll be compiled." do
     "\nimport 'bootstrap';
         import './stylesheets/application.scss';\n"
   end
