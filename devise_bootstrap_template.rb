@@ -119,7 +119,7 @@ def add_bootstrap_navbar
 
   append_to_file navbar do
     '<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <%= link_to Rails.application.class.parent_name, root_path, class:"navbar-brand" %>
+        <%= link_to Rails.application.class.module_parent_name.underscore, root_path, class:"navbar-brand" %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
